@@ -8,11 +8,8 @@ alias s="subl ."
 alias o="open"
 alias oo="open ."
 
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
-
-# Get OS X Software Updates, and update Homebrew, npm, and their installed packages
-alias software-update='sudo softwareupdate -i -a; brew update; brew upgrade; npm update npm -g; npm update -g'
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias software-update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -37,6 +34,9 @@ command -v hd > /dev/null || alias hd="hexdump -C"
 
 # OS X has no `md5sum`, so use `md5` as a fallback
 command -v md5sum > /dev/null || alias md5sum="md5"
+
+# OS X has no `sha1sum`, so use `shasum` as a fallback
+command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
@@ -78,11 +78,17 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
 
+# Intuitive map function
+# For example, to list all directories that contain a certain file:
+# find . -name .gitattributes | map dirname
+alias map="xargs -n1"
+
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "$method"="lwp-request -m '$method'"
 done
 
+# Some git utilities
 alias git-stash-pull="git stash && git pull && git stash pop"
 alias git-stash-dirty="git stash show -p | git apply && git stash drop"
 
@@ -96,3 +102,6 @@ alias nyan="nc -v miku.acm.uiuc.edu 23"
 alias mongod-run='mongod run --config /usr/local/etc/mongod.conf'
 alias pgsql-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgsql-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
+# Shit's n giggles
+alias rudy='ruby'

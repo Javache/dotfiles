@@ -36,6 +36,7 @@
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = trailing-space,space-before-tab
+	autocrlf = false
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -44,6 +45,10 @@
 [diff]
 	renames = copies
 	mnemonicprefix = true
+	whitespace = red reverse
+
+[help]
+	autocorrect = 1
 
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages

@@ -1,0 +1,95 @@
+/* ~/Library/KeyBindings/DefaultKeyBinding.dict */
+{
+    "^§" = {
+        ":"     = ("insertText:", "\U22EE"); /* ⋮ */
+        "."     = ("insertText:", "\U2026"); /* … */
+        "="     = ("insertText:", "\U2248"); /* ≈ */
+
+        "c"     = ("insertText:", "\U2318"); /* ⌘ */
+        "o"     = ("insertText:", "\U2325"); /* ⌥ */
+        "t"     = ("insertText:", "\U2303"); /* ⌃ */
+        "s"     = ("insertText:", "\U21E7"); /* ⇧ */
+
+        "e"     = ("insertText:", "\U21A9"); /* ↩ */
+
+        "l"     = ("insertText:", "\U2190"); /* ← */
+        "r"     = ("insertText:", "\U2192"); /* → */
+        "u"     = ("insertText:", "\U2191"); /* ↑ */
+        "d"     = ("insertText:", "\U2193"); /* ↓ */
+        "?"     = ("insertText:", "\U2194"); /* ↔ */
+        "/"     = ("insertText:", "\U2195"); /* ↕ */
+        "U"     = {
+            "l" = ("insertText:", "\U2196"); /* ↖ */
+            "r" = ("insertText:", "\U2197"); /* ↗ */
+        };
+        "D"     = {
+            "l" = ("insertText:", "\U2198"); /* ↘ */
+            "r" = ("insertText:", "\U2199"); /* ↙ */
+        };
+
+        "~"     = ("insertText:", "\U219D"); /* ↝ */
+
+        ">"     = ("insertText:", "\U21D2"); /* ⇒ */
+        "<"     = ("insertText:", "\U21D0"); /* ⇐ */
+
+        "h"     = ("insertText:", "\U2665"); /* ♥ */
+        "S"     = ("insertText:", "\U2603"); /* ☃ */
+        "O"     = ("insertText:", "\U0CA0"); /* ಠ */
+        "m"     = ("insertText:", "\U266B"); /* ♫ */
+        "M"     = ("insertText:", "\U266C"); /* ♬ */
+    };
+
+    "^s" = {
+        "0"     = ("insertText:", "\U2070"); /* ⁰ */
+        "1"     = ("insertText:", "\U00B9"); /* ¹ */
+        "2"     = ("insertText:", "\U00B2"); /* ² */
+        "3"     = ("insertText:", "\U00B3"); /* ³ */
+        "4"     = ("insertText:", "\U2074"); /* ⁴ */
+        "5"     = ("insertText:", "\U2075"); /* ⁵ */
+        "6"     = ("insertText:", "\U2076"); /* ⁶ */
+        "7"     = ("insertText:", "\U2077"); /* ⁷ */
+        "8"     = ("insertText:", "\U2078"); /* ⁸ */
+        "9"     = ("insertText:", "\U2079"); /* ⁹ */
+    };
+
+    "^S" = {
+        "0"     = ("insertText:", "\U2080"); /* ₀ */
+        "1"     = ("insertText:", "\U2081"); /* ₁ */
+        "2"     = ("insertText:", "\U2082"); /* ₂ */
+        "3"     = ("insertText:", "\U2083"); /* ₃ */
+        "4"     = ("insertText:", "\U2084"); /* ₄ */
+        "5"     = ("insertText:", "\U2085"); /* ₅ */
+        "6"     = ("insertText:", "\U2086"); /* ₆ */
+        "7"     = ("insertText:", "\U2087"); /* ₇ */
+        "8"     = ("insertText:", "\U2088"); /* ₈ */
+        "9"     = ("insertText:", "\U2089"); /* ₉ */
+    };
+
+    "^g" = {
+        "a"     = ("insertText:", "\U03B1"); /* α */
+        "b"     = ("insertText:", "\U03B2"); /* β */
+        "g"     = ("insertText:", "\U03B3"); /* γ */
+        "d"     = ("insertText:", "\U03B4"); /* δ */
+        "D"     = ("insertText:", "\U0394"); /* Δ */
+        "l"     = ("insertText:", "\U03BB"); /* λ */
+        "p"     = ("insertText:", "\U03C0"); /* π */
+        "u"     = ("insertText:", "\U03BC"); /* μ */
+        "f"     = ("insertText:", "\U03C6"); /* φ */
+        "e"     = ("insertText:", "\U03B5"); /* ε */
+        "m"     = ("insertText:", "\U03BC"); /* μ */
+    };
+
+    "^l" = {
+        "a"     = ("insertText:", "\U2200"); /* ∀ */
+        "e"     = ("insertText:", "\U2203"); /* ∃ */
+        "^e"    = ("insertText:", "\U2261"); /* ≡ */
+        "["     = ("insertText:", "\U301A"); /* 〚 */
+        "]"     = ("insertText:", "\U301B"); /*  〛*/
+        "n"     = ("insertText:", "\U2115"); /* ℕ */
+        "z"     = ("insertText:", "\U2124"); /* ℤ */
+        "i"     = ("insertText:", "\U2208"); /* ∈ */
+        "s"     = ("insertText:", "\U2211"); /* ∑ */
+        "r"     = ("insertText:", "\U21D2"); /* ⇒ */
+        "b"     = ("insertText:", "\U22A5"); /* ⊥ */
+    };
+}

@@ -81,7 +81,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set list
 set listchars=tab:\ \ ,trail:·
 
 function! s:setupWrapping()
@@ -226,10 +225,6 @@ nnoremap <silent> <C-l> :noh<CR><C-L>
 " edit and source vimrc easily
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<cr>
-
-" spare my fingers in the long run
-inoremap jj <esc>
-inoremap jk <esc>
 
 " rewrite file with sudo
 cmap w!! w !sudo tee % >/dev/null
