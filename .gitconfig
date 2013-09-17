@@ -33,10 +33,9 @@
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = trailing-space,space-before-tab
-	autocrlf = false
+	autocrlf = input
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
