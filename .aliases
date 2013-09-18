@@ -1,5 +1,14 @@
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
 # Shortcuts
 alias d="cd ~/Dropbox"
+alias dl="cd ~/Downloads"
 alias p="cd ~/Projects"
 alias g="git"
 alias j="jobs"
@@ -66,10 +75,9 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
-# Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
-# Enable Spotlight
+# Enable/disable Spotlight
 alias spoton="sudo mdutil -a -i on"
+alias spotoff="sudo mdutil -a -i off"
 
 # PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
 alias plistbuddy="/usr/libexec/PlistBuddy"
@@ -88,20 +96,17 @@ for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "$method"="lwp-request -m '$method'"
 done
 
-# Some git utilities
-alias git-stash-pull="git stash && git pull && git stash pop"
-alias git-stash-dirty="git stash show -p | git apply && git stash drop"
-
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 7'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-alias nyan="nc -v miku.acm.uiuc.edu 23"
+# Other utilities
+alias week='date +%V'
+# Kill all the tabs in Chrome to free up memory
+# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
+alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
 # Running software
-alias mongod-run='mongod run --config /usr/local/etc/mongod.conf'
-alias pgsql-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgsql-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias mongod-run="mongod run --config /usr/local/etc/mongod.conf"
+alias pgsql-start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgsql-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 # Shit's n giggles
-alias rudy='ruby'
+alias rudy="ruby"
+alias yolo="git commit -am 'DEAL WITH IT' && git push -f origin master"

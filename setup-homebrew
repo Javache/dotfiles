@@ -27,6 +27,7 @@ brew install appledoc doxygen
 brew install rbenv ruby-build
 brew install node
 brew install android-sdk
+brew install cmake
 
 # Multimedia
 brew install imagemagick --use-jpeg2000 --use-tiff
@@ -35,8 +36,6 @@ brew install lame
 brew install ffmpeg --with-libvpx --with-theora
 
 # Other stuff
-brew install postgres
-brew install mongodb redis
 brew install youtube-dl
 brew install webkit2png
 brew install lynx

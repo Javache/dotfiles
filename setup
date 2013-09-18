@@ -1,0 +1,14 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+config_path=$(pwd)
+
+# Link all files or folders starting with a dot
+source_files=$(find . -type f | sed 's#^\./##' | grep -v '^\.git' | grep '^\.')
+for file in $source_files; do
+    # Create the parent directory if it does not exist yet
+    base_dir=$(dirname $file)
+    mkdir -p ~/$base_dir
+
+    # Link the config file
+    ln -vs $config_path/$file ~/$file;
+done
