@@ -1,4 +1,4 @@
-PROMPT='%{$fg[cyan]%}%n%{$reset_color%} %{$fg[green]%}%~%{$reset_color%} $(git_prompt_info)$(svn_prompt_info)%(!.#.▸) '
+PROMPT='%{$fg[cyan]%}%m%{$reset_color%} %{$fg[green]%}%~%{$reset_color%} $(git_prompt_info)$(svn_prompt_info)%(!.#.▸) '
 ZSH_THEME_GIT_PROMPT_SUFFIX=') '
 ZSH_THEME_SVN_PROMPT_PREFIX="svn:("
 ZSH_THEME_SVN_PROMPT_DIRTY="*"
