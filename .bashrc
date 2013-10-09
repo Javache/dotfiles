@@ -76,7 +76,9 @@ export CLICOLOR=1
 export LSCOLORS='Gxfxcxdxbxegedabagacad'
 export LS_COLORS='di=1;36;40:ln=35;40:so=32;40:pi=33;40:ex=91;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
 
-c_reset="\[$(tput sgr0)\]"
-c_cyan="\[$(tput setaf 6)\]"
-c_green="\[$(tput setaf 2)\]"
-export PROMPT_COMMAND='PS1="${c_cyan}\h${c_reset} ${c_green}\w${c_reset} $(my_dotfiles_scm_info)▸ "'
+if tty -s; then
+  c_reset="\[$(tput sgr0)\]"
+  c_cyan="\[$(tput setaf 6)\]"
+  c_green="\[$(tput setaf 2)\]"
+  export PROMPT_COMMAND='PS1="${c_cyan}\h${c_reset} ${c_green}\w${c_reset} $(my_dotfiles_scm_info)▸ "'
+fi
