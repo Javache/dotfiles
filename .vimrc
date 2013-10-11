@@ -41,7 +41,7 @@ nnoremap <leader>gt :Gstatus<cr>
 
 let NERDTreeIgnore = ['\.pyc$']
 
-let g:Powerline_symbols = 'compatible'
+let g:Powerline_symbols = 'fancy'
 let g:haddock_browser="open"
 
 " }}}
@@ -138,9 +138,6 @@ function! MyFoldText() " {{{
 endfunction " }}}
 set foldtext=MyFoldText()
 
-" }}}
-" I hate K {{{
-nnoremap K <nop>
 " }}}
 " Filetype specific {{{
 " Markdown {{{

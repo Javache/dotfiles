@@ -6,8 +6,8 @@
 	token = 60902839a21e3d70bc0d6fc6048d82af
 
 [alias]
-	# View the SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph
+	# View the SHA, description, and history graph
+	l = log --oneline --graph --decorate
 	# View the current working tree status using the short format
 	s = status -s
 	# Show the diff between the latest commit and the current state
@@ -34,7 +34,7 @@
 	undopush = push -f origin HEAD^:master
 
 	wdiff = diff --color-words
-	stash-pull = !"git stash && git pull && git stash pop"
+	stash-pull = !"git stash && git p && git stash pop"
 	stash-pop-dirty = !"git stash show -p | git apply && git stash drop"
 
 	st = status -sb

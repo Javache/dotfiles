@@ -21,8 +21,10 @@ export GREP_OPTIONS="--color=auto"
 export CLICOLOR=1
 
 # Extend PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.cabal/bin:$PATH
-export PATH=$HOME/Scripts:$PATH
+export PATH=$HOME/bin:$PATH
 
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/Library/Python/2.7/site-packages
 export NODE_PATH="/usr/local/share/npm/lib/node_modules"
