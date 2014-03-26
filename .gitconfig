@@ -1,9 +1,6 @@
 [user]
 	name = Pieter De Baets
 	email = pieter.debaets@gmail.com
-[github]
-	user = Javache
-	token = 60902839a21e3d70bc0d6fc6048d82af
 
 [alias]
 	# View the SHA, description, and history graph
