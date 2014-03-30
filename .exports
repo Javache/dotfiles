@@ -30,5 +30,4 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/Library/Python/2.7/sit
 export NODE_PATH="/usr/local/share/npm/lib/node_modules"
 export MANPATH="/usr/local/share/man:$MANPATH"
 export INFOPATH="/usr/local/share/info:$INFOPATH"
-export ANDROID_SDK_ROOT=$(brew --prefix android-sdk)
 export PYTHONSTARTUP="$HOME/.pystartup"

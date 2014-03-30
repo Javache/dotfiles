@@ -42,7 +42,8 @@ nnoremap <leader>gt :Gstatus<cr>
 let NERDTreeIgnore = ['\.pyc$']
 
 let g:Powerline_symbols = 'fancy'
-let g:haddock_browser="open"
+let g:haddock_browser = 'open'
+let g:yankring_history_dir = '$HOME/.vim/tmp'
 
 " }}}
 " General options {{{
@@ -64,6 +65,7 @@ endif
 set splitright
 set splitbelow
 set autoread " auto reload file on change
+let &colorcolumn="80,".join(range(120,999),",")
 
 set scrolloff=8 "keep 8 lines below/above cursor
 " }}}

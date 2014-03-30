@@ -37,6 +37,7 @@
 	st = status -sb
 	unstage = reset HEAD --
 	last = log -1 HEAD
+	co = checkout
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -48,6 +49,7 @@
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = trailing-space,space-before-tab,cr-at-eol
 	autocrlf = input
+	trustctime = false
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -66,7 +68,7 @@
 	log = true
 
 [push]
-	default = matching
+	default = simple
 
 # URL shorthands
 [url "git@github.com:"]

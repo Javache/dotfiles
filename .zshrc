@@ -3,7 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="javache"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git svn brew bundler gem osx rbenv)
+plugins=(git svn rbenv brew bundler gem osx)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
@@ -14,5 +14,3 @@ source $HOME/.functions
 setopt no_share_history
 autoload -U zmv
 
-# Shell integration
-eval "$(hub alias -s)"
