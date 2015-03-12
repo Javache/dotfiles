@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -17,13 +17,14 @@ brew install ack
 brew install ssh-copy-id
 brew install git hub
 brew install mercurial
-brew install wget --enable-iri
+brew install wget --with-iri
 brew install ngrep
 brew install tree
 brew install colordiff
+brew install rename
 
 # Programming tools
-brew install appledoc doxygen
+brew install doxygen
 brew install rbenv ruby-build
 brew install node
 brew install cmake
@@ -35,6 +36,8 @@ brew install lame
 brew install ffmpeg --with-libvpx --with-theora
 
 # Other stuff
+brew install openssl
+brew install mobile-shell
 brew install youtube-dl
 brew install webkit2png
 brew install lynx

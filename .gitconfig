@@ -31,8 +31,11 @@
 	undopush = push -f origin HEAD^:master
 
 	wdiff = diff --color-words
+	wshow = show --color-words
 	stash-pull = !"git stash && git p && git stash pop"
 	stash-pop-dirty = !"git stash show -p | git apply && git stash drop"
+	amend = commit --amend -C HEAD
+	amend-all = commit --all --amend -C HEAD
 
 	st = status -sb
 	unstage = reset HEAD --
@@ -59,16 +62,16 @@
 	renames = copies
 	mnemonicprefix = true
 	whitespace = red reverse
+	renamelimit = 1048576
 
 [help]
 	autocorrect = 1
 
 [merge]
-	# Include summaries of merged commits in newly created merge commit messages
-	log = true
+	renamelimit = 1048576
 
 [push]
-	default = simple
+	default = upstream
 
 # URL shorthands
 [url "git@github.com:"]
