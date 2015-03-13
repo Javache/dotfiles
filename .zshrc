@@ -3,7 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="javache"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git svn brew bundler gem osx)
+plugins=(git svn mercurial brew bundler gem osx)
 
 eval "$(rbenv init -)"
 
