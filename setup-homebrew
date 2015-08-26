@@ -33,7 +33,7 @@ brew install cmake
 brew install imagemagick --use-jpeg2000 --use-tiff
 brew install graphviz --with-bindings --with-app
 brew install lame
-brew install ffmpeg --with-libvpx --with-theora
+brew install ffmpeg --with-libvpx --with-theora --with-fdk-aac
 
 # Other stuff
 brew install openssl

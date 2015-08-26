@@ -10,7 +10,7 @@ import os
 import readline
 import rlcompleter
 
-historyPath = "/Users/pieter/.pyhistory"
+historyPath = os.path.expanduser("~/.pyhistory")
 
 if 'libedit' in readline.__doc__:
   readline.parse_and_bind("bind ^I rl_complete")
