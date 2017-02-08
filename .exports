@@ -1,10 +1,10 @@
 # Default tools
 export EDITOR="subl -w"
 export REACT_EDITOR="atom"
-export MANPAGER="col -b | bcat"
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
+export SAVEHIST=$HISTSIZE
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
@@ -21,15 +21,20 @@ export LESS_TERMCAP_md="$ORANGE"
 export GREP_OPTIONS="--color=auto"
 export CLICOLOR=1
 
-# Extend PATH
-export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/bin:$PATH
-export PATH=$HOME/src/devtools/buck/bin:$PATH
+# To extend PATH, see /etc/paths and /etc/paths.d
 export PATH=$HOME/bin:$PATH
 
 export RBENV_ROOT=/usr/local/var/rbenv
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/Library/Python/2.7/site-packages
 export NODE_PATH="/usr/local/share/npm/lib/node_modules"
 export MANPATH="/usr/local/share/man:$MANPATH"
 export INFOPATH="/usr/local/share/info:$INFOPATH"
 export PYTHONSTARTUP="$HOME/.pystartup"
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
+export ANT_HOME=/usr/local/opt/ant
+export MAVEN_HOME=/usr/local/opt/maven
+export GRADLE_HOME=/usr/local/opt/gradle
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_SDK=${ANDROID_HOME}
+export ANDROID_NDK=/opt/android_ndk/android-ndk-r10e
+export ANDROID_NDK_REPOSITORY=/opt/android_ndk

@@ -57,9 +57,12 @@ _dotfiles_scm_info()
     else
       br=$(echo $dirstate | cut -c 1-7)
       local remote="$hg/.hg/remotenames"
+      if [ -f "$hg/.hg/sharedpath" ]; then
+          remote="`cat $hg/.hg/sharedpath`/remotenames"
+      fi
       if [[ -f "$remote" ]]; then
         local marks=$(grep --color=never "^$dirstate bookmarks" "$remote" | \
-          cut -f 3 -d ' ' | sed 's/^remote\///' | tr -d '\n' )
+          cut -f 3 -d ' ' | sed 's/^remote\///' | paste -s -d, - )
         if [[ -n "$marks" ]]; then
           br="$marks"
         fi
