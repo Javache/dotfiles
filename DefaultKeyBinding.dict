@@ -4,6 +4,7 @@
         ":"     = ("insertText:", "\U22EE"); /* ⋮ */
         "."     = ("insertText:", "\U2026"); /* … */
         "="     = ("insertText:", "\U2248"); /* ≈ */
+        "-"     = ("insertText:", "\U2014"); /* – */
 
         "c"     = ("insertText:", "\U2318"); /* ⌘ */
         "o"     = ("insertText:", "\U2325"); /* ⌥ */

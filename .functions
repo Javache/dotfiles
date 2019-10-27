@@ -22,10 +22,9 @@ function mkd() {
 }
 
 # Change working directory to the top-most Finder window location
-function cdfinder() {
-	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
+function cdf() { # short for `cdfinder`
+	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
 }
-alias cdf="cdfinder"
 
 # Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
 function targz() {
@@ -196,4 +195,13 @@ function unquarantine() {
 	done
 }
 
-. ~/bin/z/z.sh
+# `o` with no arguments opens the current directory, otherwise opens the given
+# location
+function o() {
+	if [ $# -eq 0 ]; then
+		open .;
+	else
+		open "$@";
+	fi;
+}
+
