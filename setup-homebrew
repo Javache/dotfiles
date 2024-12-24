@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -17,14 +17,14 @@ brew install ack dos2unix tree ssh-copy-id \
 # Programming tools
 brew install ninja node cmake doxygen \
   rbenv ruby-build clang-format cloc \
-  lua pidcat
+  lua pidcat yarn jq
 
 # Multimedia
 brew install imagemagick youtube-dl \
   graphviz lame webkit2png
 
-brew tap varenc/ffmpeg
-brew install varenc/ffmpeg/ffmpeg --with-fdk-aac --with-openssl --with-libmodplug --with-rtmpdump
+brew tap homebrew-ffmpeg/ffmpeg
+brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-fdk-aac --with-openssl --with-libmodplug --with-rtmpdump
 
 # Remove outdated versions from the cellar
 brew cleanup

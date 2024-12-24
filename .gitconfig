@@ -43,6 +43,8 @@
 	last = log -1 HEAD
 	co = checkout
 
+	sl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all --since='90 days ago'
+
 [apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix

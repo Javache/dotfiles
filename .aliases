@@ -14,9 +14,10 @@ alias g="git"
 alias j="jobs"
 alias v="vim"
 alias s="subl ."
-alias o="open"
-alias oo="open ."
 alias nuclide="atom"
+
+alias fbsource="cd ~/fbsource"
+alias rn="cd ~/fbsource/xplat/js/react-native-github"
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias software-update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup'
@@ -114,3 +115,5 @@ alias pgsql-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 # Shit's n giggles
 alias rudy="ruby"
 alias yolo="git commit -am 'DEAL WITH IT' && git push -f origin master"
+
+alias subl-rn="subl ~/fbsource/xplat/js/react-native-github/packages/react-native"
